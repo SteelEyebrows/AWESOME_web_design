@@ -24,17 +24,20 @@ export const CircleContainer =styled.div`
 
 .circle.first {
   background: #ff948d;
+  z-index:0;
 }
 
 .circle.second {
   transition-delay: 0.5s;
-  background: grey;
+  background: #fff;
   opacity: 0;
+  z-index:0;
 }
 
 .circle.third {
     transition-delay: 0.5s;
     background: #ff948d;
     opacity: 0;
+    z-index:1;
 }
 `

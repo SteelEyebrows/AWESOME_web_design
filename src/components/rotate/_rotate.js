@@ -7,7 +7,7 @@ const Rotate = ({})=>{
 
 	return (
 		<div>
-            
+            <div className="RotateText">
 				<svg 
 					version="1.1" 
 					xmlns="http://www.w3.org/2000/svg" 
@@ -30,7 +30,7 @@ const Rotate = ({})=>{
 						</text>
 					</g>
 				</svg>
-				
+			</div>	
 			
         </div>
 	);
