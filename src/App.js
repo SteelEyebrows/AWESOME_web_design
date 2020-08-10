@@ -10,15 +10,24 @@ import './App.css';
 const property = [
   {
     title:"FIRST Page",
-    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRd-2NC7-uHVmOwsfRz8ket5XvwbsbXk51gSA&usqp=CAU",
+    image:[
+      "https://images.unsplash.com/photo-1556228578-d3984a1f7e71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "https://images.unsplash.com/photo-1556228994-efb7c88fa0f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      ]
   },
   {
     title:"SECON PAGE",
-    image:"https://lh3.googleusercontent.com/proxy/7G00pAX42U_mCqKBVwfb4vbwo6_kqEFGOc_wCxXyYGmbHHoYy8oDcAxEuW2cJZnL7PxvXfEOoVGklMsYMzwDKGtdSnJEKRwz1dPv44Wz5wwlQLsgy0pDIDitHhIqTPcKWt3vnFRP852iscqP_IzCLLAJW3uUmw",
+    image:[
+      "https://images.unsplash.com/photo-1556227702-5ec9eb8df3ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+      "https://images.unsplash.com/photo-1556228578-1f08a75ac92d?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+      ]
   },
   {
     title:"THIRD PAGE",
-    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRd-2NC7-uHVmOwsfRz8ket5XvwbsbXk51gSA&usqp=CAU",
+    image:[
+      "https://images.unsplash.com/photo-1556228578-d3984a1f7e71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "https://images.unsplash.com/photo-1556228994-efb7c88fa0f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      ]
   },
 ]
 

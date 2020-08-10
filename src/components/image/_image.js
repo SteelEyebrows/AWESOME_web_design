@@ -2,13 +2,15 @@ import * as React from "react";
 import {ImageContainer} from './_style';
 import gsap, { Sine,Linear,Power4 } from 'gsap';
 
+
+
+
 const Images = ({
     page,
     imageprop
     })=>{
     const tl = gsap.timeline();
     const [images,setImages] = React.useState(imageprop)
-
 
     React.useEffect(
 		() => {
@@ -33,13 +35,58 @@ const Images = ({
 		},
 		[page],
     );
-        
+        const onMouseEnterHandlerA =()=>{
+            tl.to('.bannerA', 0.3, {
+                    clipPath:'circle(100%)',
+                    ease: Sine.easeIn,	
+                })
+        }
+
+         const onMouseLeaveHandlerA =()=>{
+            tl.to('.bannerA', 0.3, {
+                    clipPath:'circle(0px)',
+                    ease: Sine.easeIn,	
+                })
+        }
+
+         const onMouseEnterHandlerB =()=>{
+            tl.to('.bannerB', 0.3, {
+                    clipPath:'circle(100%)',
+                    ease: Sine.easeIn,	
+                })
+        }
+
+         const onMouseLeaveHandlerB =()=>{
+            tl.to('.bannerB', 0.3, {
+                    clipPath:'circle(0px)',
+                    ease: Sine.easeIn,	
+                })
+        }
 	return (
-		<ImageContainer>
-            <img src={images} className="imageA" alt="image1"/>
-            <img src={images} className="imageB" alt="image2"/>
+		<ImageContainer  
+            backgroundA={images[0]} 
+            backgroundB={images[1]} 
+        >
+            <div 
+                onMouseEnter={onMouseEnterHandlerA} 
+                onMouseLeave={onMouseLeaveHandlerA} 
+                className="imageA"
+                >
+                <div className="bannerA"/>
+                
+            </div>
+            <div 
+                onMouseEnter={onMouseEnterHandlerB} 
+                onMouseLeave={onMouseLeaveHandlerB} 
+                className="imageB"
+            >
+                <div className="bannerB"/>
+               
+            </div>
         </ImageContainer>
 	);
 }
+
+
 
 export default Images;
